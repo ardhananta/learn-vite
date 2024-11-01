@@ -15,7 +15,7 @@ function Navbar() {
   };
 
   return (
-    <div id='background' className={`w-[20%] h-screen p-6 rounded-e-2xl shadow-2xl shadow-black ${isDayMode ? 'bg-slate-300' : 'bg-slate-900 text-white'}`}>
+    <div id='background' className={`w-[20%] h-screen absolute p-6 rounded-e-2xl shadow-2xl shadow-black ${isDayMode ? 'bg-slate-300 shadow-black' : 'bg-slate-900 text-white shadow-gray-600'}`}>
         {/* Responsife dark mode */}
       <div className='flex' onClick={toggleMode} style={{ cursor: 'pointer' }}>
         {isDayMode ? <BsFillCloudMoonFill size={25} /> : <BsFillCloudSunFill size={25} />}
